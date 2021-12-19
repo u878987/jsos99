@@ -43,17 +43,17 @@ function(input, output, session) {
     if (is.null(input$picture))
       return(NULL)
 
-    if (input$picture == "face") {
+    if (input$picture == "20190901") {
       return(list(
         src = "www/20190901.png",
         contentType = "image/png",
-        alt = "Face"
+        alt = "20190901"
       ))
-    } else if (input$picture == "chainring") {
+    } else if (input$picture == "20180616") {
       return(list(
         src = "www/20180616.jpg",
         filetype = "image/jpeg",
-        alt = "This is a chainring"
+        alt = "This is a 20180616"
       ))
     }
 
