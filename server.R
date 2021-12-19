@@ -38,20 +38,20 @@ function(input, output, session) {
   }, deleteFile = TRUE)
 
 
-  # image2 sends pre-rendered images
+  # image2 sends pre-rendered www
   output$image2 <- renderImage({
     if (is.null(input$picture))
       return(NULL)
 
     if (input$picture == "face") {
       return(list(
-        src = "images/face.png",
+        src = "www/face.png",
         contentType = "image/png",
         alt = "Face"
       ))
     } else if (input$picture == "chainring") {
       return(list(
-        src = "images/chainring.jpg",
+        src = "www/chainring.jpg",
         filetype = "image/jpeg",
         alt = "This is a chainring"
       ))
