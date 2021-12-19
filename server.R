@@ -45,13 +45,13 @@ function(input, output, session) {
 
     if (input$picture == "face") {
       return(list(
-        src = "www/face.png",
+        src = "www/20190901.png",
         contentType = "image/png",
         alt = "Face"
       ))
     } else if (input$picture == "chainring") {
       return(list(
-        src = "www/chainring.jpg",
+        src = "www/20180616.jpg",
         filetype = "image/jpeg",
         alt = "This is a chainring"
       ))
